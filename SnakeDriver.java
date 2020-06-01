@@ -350,7 +350,7 @@ class Brain{
     private Random random;
     private long rseed;
     private Double[] weights;
-    private int weightsSize = 7;
+    private int weightsSize = 3;
     private double gamma;
     private double alpha;
     public Double[] getWeights(){
@@ -404,7 +404,8 @@ class Brain{
 
         double horizontalDist = (double)Math.abs(snake.getPx() - headX)/snake.getBoardWidth();
         double verticalDist = (double)Math.abs(snake.getPy() - headY)/snake.getBoardHeight();
-        Double[] featureVector = {dirDistance, northDistance, eastDistance, southDistance, westDistance, horizontalDist, verticalDist};
+        //Double[] featureVector = {dirDistance, northDistance, eastDistance, southDistance, westDistance, horizontalDist, verticalDist};
+        Double[] featureVector = {dirDistance, horizontalDist, verticalDist};
         return featureVector;
     }
 
