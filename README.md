@@ -1,2 +1,2 @@
-# NeuroevolutionSnakeGame
-Learns to play snake made with java
+# QSnake
+Learns to play snake using approximate Q-Learning made with java
